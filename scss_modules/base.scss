@@ -177,7 +177,7 @@ $form-inputs: 'input[type="email"], input[type="number"], input[type="password"]
 	}
 }
 
-@mixin padding($value,$type : m,$unit:em){
+@mixin padding($value,$type : p,$unit:em){
 	@if $unit == em or $unit == rem{
 		$size:$value/$base-font#{$unit};
 	}
@@ -185,19 +185,19 @@ $form-inputs: 'input[type="email"], input[type="number"], input[type="password"]
 		$size:$value#{$unit};
 	}
 	
-	@if $type == m{
+	@if $type == p{
 		padding : $size/$base-font#{$unit};
 	}
-	@else if $type == mt{
+	@else if $type == pt{
 		padding : $size/$base-font#{$unit};
 	}
-	@else if $type == mr{
+	@else if $type == pr{
 		padding : $size/$base-font#{$unit};
 	}
-	@else if $type == mb{
+	@else if $type == pb{
 		padding : $size/$base-font#{$unit};
 	}
-	@else if $type == ml{
+	@else if $type == pl{
 		padding : $size/$base-font#{$unit};
 	}
 }
